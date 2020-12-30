@@ -110,3 +110,9 @@ In case errors/exceptions are encountered, please first check all the paths. Aft
 
 ## FAQ
 * To be added
+
+
+## ViT (Vision Transformer) for IQA
+This work is heavily inspired by ViT [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929). 
+The module vit_iqa contains implementation of ViT for IQA, and mainly followed the implementation of [ViT-PyTorch](https://github.com/jeonsworld/ViT-pytorch).
+Pretrained ViT weights can be downloaded [here](https://github.com/google-research/vision_transformer)
