@@ -36,7 +36,7 @@ In principle, the following parameters can be defined:
     args['koniq_mos_file'] = r'..\databases\koniq10k_images_scores.csv'  # MOS (distribution of scores) file for KonIQ database
     args['live_mos_file'] = r'..\databases\live_mos.csv'   # MOS (standard distribution of scores) file for LIVE-wild database
 
-    args['backbone'] = 'resnet50' # Choose from ['resnet18', 'resnet50', 'resnet152', 'resnet152v2', 'vgg16', 'resnest50']
+    args['backbone'] = 'resnet50' # Choose from ['resnet50', 'vgg16']
     args['weights'] = r'...\pretrained_weights\resnet50_weights_tf_dim_ordering_tf_kernels_notop.h5'  # Define the path of ImageNet pretrained weights
     args['initial_epoch'] = 0  # Define initial epoch for use in fine-tune
 
