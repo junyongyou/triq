@@ -36,7 +36,7 @@ In principle, the following parameters can be defined:
     args['koniq_mos_file'] = r'..\databases\koniq10k_images_scores.csv'  # MOS (distribution of scores) file for KonIQ database
     args['live_mos_file'] = r'..\databases\live_mos.csv'   # MOS (standard distribution of scores) file for LIVE-wild database
 
-    args['backbone'] = 'resnet50' # Choose from ['resnet18', 'resnet50', 'resnet152', 'resnet152v2', 'vgg16', 'resnest50']
+    args['backbone'] = 'resnet50' # Choose from ['resnet50', 'vgg16']
     args['weights'] = r'...\pretrained_weights\resnet50_weights_tf_dim_ordering_tf_kernels_notop.h5'  # Define the path of ImageNet pretrained weights
     args['initial_epoch'] = 0  # Define initial epoch for use in fine-tune
 
@@ -115,4 +115,4 @@ In case errors/exceptions are encountered, please first check all the paths. Aft
 ## ViT (Vision Transformer) for IQA
 This work is heavily inspired by ViT [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929). 
 The module vit_iqa contains implementation of ViT for IQA, and mainly followed the implementation of [ViT-PyTorch](https://github.com/jeonsworld/ViT-pytorch).
-Pretrained ViT weights can be downloaded [here](https://github.com/google-research/vision_transformer)
+Pretrained ViT weights can be downloaded [here](https://github.com/google-research/vision_transformer).
