@@ -105,6 +105,9 @@ SGDNet [SGDNet: An end-to-end saliency-guided deep neural network for no-referen
 
 CaHDC [End-to-end blind image quality prediction with cascaded deep neural network](https://web.xidian.edu.cn/wjj/files/20190620_152557.zip)
 
+## Comparison results
+We have conducted several experiments to evaluate the performance of TRIQ, please see [results.pdf](results.pdf) for detailed results.
+
 ## Error report
 In case errors/exceptions are encountered, please first check all the paths. After fixing the path isse, please report any errors in Issues.
 
