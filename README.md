@@ -1,6 +1,6 @@
 # TRIQ Implementation
 
-TF-Keras implementation of TRIQ as described in [Transformer for Image Quality Assessment](https://arxiv.org/abs/2101.01097).
+TF-Keras implementation of TRIQ as described in [Transformer for Image Quality Assessment](https://arxiv.org/abs/2101.01097v2).
 
 ## Installation
 
