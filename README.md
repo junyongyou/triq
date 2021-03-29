@@ -64,6 +64,8 @@ And then use ModelEvaluation to predict quality of image set.
 In the "examples" folder, an example script examples\image_quality_prediction.py is provided to use the trained weights to predict quality of example images.
 In the "train" folder, an example script train\validation.py is provided to use the trained weights to predict quality of images in folders.
 
+A potential issue is image shape mismatch. For example, if an image is too large, then line 146 in transformer_iqa.py should be changed to increase the pooling size. For example, it can be changed to self.pooling_small = MaxPool2D(pool_size=(4, 4)) or even larger.
+
 ## Prepare datasets for model training
 This work uses two publicly available databases: KonIQ-10k [KonIQ-10k: An ecologically valid database for deep learning of blind image quality assessment](https://ieeexplore.ieee.org/document/8968750) by V. Hosu, H. Lin, T. Sziranyi, and D. Saupe;
  and LIVE-wild [Massive online crowdsourced study of subjective and objective picture quality](https://ieeexplore.ieee.org/document/7327186) by D. Ghadiyaram, and A.C. Bovik
