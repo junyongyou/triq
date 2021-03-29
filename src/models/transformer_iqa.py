@@ -160,8 +160,8 @@ class TriQImageQualityTransformer(Model):
         self.mlp_head = tf.keras.Sequential(
             [
                 Dense(mlp_dim, activation=tfa.activations.gelu),
-                Dropout(dropout),
-                Dense(n_quality_levels, activation=mlp_activation),
+                # Dropout(dropout),
+                # Dense(n_quality_levels, activation=mlp_activation),
             ]
         )
 
