@@ -36,8 +36,14 @@ class ModelEvaluationIQGenerator(Callback):
             prediction = []
             scores = []
             for i in range(prediction_batch.shape[0]):
-                prediction.append(np.sum(np.multiply(self.mos_scales, prediction_batch[i,:])))
-                scores.append(np.sum(np.multiply(self.mos_scales, scores_batch[i, :])))
+                if self.using_single_mos:
+                    prediction.append(prediction_batch[i,:][0])
+                    scores.append(scores_batch[i])
+                else:
+                    prediction.append(np.sum(np.multiply(self.mos_scales, prediction_batch[i,:])))
+                    scores.append(np.sum(np.multiply(self.mos_scales, scores_batch[i, :])))
+#                 prediction.append(np.sum(np.multiply(self.mos_scales, prediction_batch[i,:])))
+#                 scores.append(np.sum(np.multiply(self.mos_scales, scores_batch[i, :])))
             predictions.extend(prediction)
             mos_scores.extend(scores)
 
